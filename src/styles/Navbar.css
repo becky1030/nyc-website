@@ -4,124 +4,8 @@
     background-color: #121619;
     display: flex;
     flex-direction: row;
-  }
-  
-  .navbar .leftSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 150px;
-  }
-  
-  .navbar .leftSide img {
-    width: 70px;
-  }
-  
-  .navbar .rightSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-  }
-  
-  .navbar .rightSide button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .navbar .rightSide svg {
-    font-size: 40px;
-  }
-  
-  .navbar #open {
-    padding-left: 0px;
-  }
-  .navbar #open img {
-    display: none;
-  }
-  
-  .navbar #close img {
-    display: inherit;
-  }
-  
-  .navbar #open .hiddenLinks {
-    display: inherit;
-    margin-left: 30px;
-  }
-  
-  .navbar #close .hiddenLinks {
-    display: none;
-  }
-  
-  .navbar #open a {
-    width: 70px;
-    margin: 5px;
-  }
-  @media only screen and (max-width: 900px) {
-    .navbar .rightSide a {
-      width: 70px;
-    }
-    .navbar .leftSide {
-      padding-left: 50px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .navbar .rightSide a {
-      display: none;
-    }
-  
-    .navbar .rightSide {
-      justify-content: flex-end;
-      padding-right: 50px;
-    }
-  
-    .navbar .rightSide button {
-      display: inherit;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .navbar .rightSide button {
-      display: none;
-    }
-  
-    .hiddenLinks {
-      display: none;
-    }
-  }
-
-  @media only screen and (min-width: 600px) {
-    .navbar .rightSide button {
-      display: none;
-    }
-    .hiddenLinks {
-      display: none;
-    }
-  }
-
-
-
-
-
-
-
-  .navbar {
-    width: 100%;
-    height: 100px;
-    background-color: #121619;
-    display: flex;
-    flex-direction: row;
+    position: fixed;
+    top: 0;
   }
   
   .navbar .leftSide {
@@ -188,37 +72,54 @@
 
 
     /* media query--> what is this? determine size base on the width of the screen */
+@font-face {
+  font-family: la;
+  src: url(../assets/Krungthep.ttf);
+}
 
-  @media only screen and (max-width: 900px) {
-    .navbar .rightSide a {
-      width: 70px;
-    }
-    .navbar .leftSide {
-      padding-left: 50px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .navbar .rightSide a {
-      display: none;
-    }
-  
-    .navbar .rightSide {
-      justify-content: flex-end;
-      padding-right: 50px;
-    }
-  
-    .navbar .rightSide button {
-      display: inherit;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .navbar .rightSide button {
-      display: none;
-    }
-  
-    .hiddenLinks {
-      display: none;
-    }
-  }
+.navbar {
+  height: 15vh;
+  background: #fff200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: la;
+
+}
+
+/* how to move apple upward a bit */
+.navbar-logo {
+  align-items: right;
+  width: 8rem;
+  margin-right: 10px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: left;
+  /* height: 10vh; */
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.8rem;
+  margin-left: 2rem;
+  padding: 4px 6px;
+  border-radius: 0px;
+}
+.nav-item a:hover {
+  background:transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}

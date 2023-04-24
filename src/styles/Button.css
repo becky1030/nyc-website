@@ -1,0 +1,27 @@
+@font-face {
+    font-family: la;
+    src: url(../assets/Krungthep.ttf);
+  }
+
+
+.btn{
+    border: black;
+    border-style: solid;
+    border-width: 3px;
+    background: white;
+    margin: 5px;
+    padding: 6px 16px;
+    font-size: 1.1rem;
+    color: black;
+    background: green;
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+    font-family: la;
+
+}
+
+.btn:hover{
+    color: black;
+    background: rgb(255, 0, 0);
+}
+

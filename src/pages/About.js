@@ -1,16 +1,22 @@
 import React from "react";
-import Manhattan from "../assets/manhattan.jpg";
 import "../styles/About.css";
+import Sheet from "../assets/about.png";
 
 function About() {
   return (
-    <div className="about">
-      <div className="aboutTop"
-      style={{backgroundImage: `url(${Manhattan})` }}
-      > </div>
-      <div className="aboutBottom"> </div>
-      <h1>ABOUT US</h1>
-      <p>guigkfvkjvkhvhjcjchjvmvnmbvhjvkvk</p>
+    <div className="home" style={{backgroundColor: '#fff200'}}>
+
+
+     
+
+
+    <div class="sheet">
+  <img src={Sheet} />
+  </div>
+
+
+
+
 
 
     </div>

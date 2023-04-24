@@ -1,5 +1,9 @@
+// can not change button to image
+
 import React from "react";
-import Manhattan from "../assets/manhattan.jpg";
+import String from "../assets/string.png";
+import SubmitButton from "../assets/submit.png";
+import Scream from "../assets/scream.png";
 import "../styles/Contact.css";
 
 function Contact() {
@@ -7,10 +11,14 @@ function Contact() {
     <div className="contact">
       <div
         className="leftSide"
-        style={{ backgroundImage: `url(${Manhattan})` }}
+        style={{
+          backgroundColor: "#fff200",
+          backgroundImage: `url(${Scream})`,
+        }}
       ></div>
       <div className="rightSide">
-        <h1> Contact Us</h1>
+
+        <h1> Want to put a picture here!!!</h1>
 
         <form id="contact-form" method="POST">
           <label htmlFor="name">Full Name</label>
@@ -24,7 +32,12 @@ function Contact() {
             name="message"
             required
           ></textarea>
-          <button type="submit"> Send Message</button>
+          {/* <button><img src="submit" alt="my image"/></button> */}
+          <button
+            type="submit"
+            style={{ backgroundImage: `url(${SubmitButton})`,
+           }}
+          ></button>
         </form>
       </div>
     </div>
@@ -32,3 +45,15 @@ function Contact() {
 }
 
 export default Contact;
+
+
+
+
+
+
+
+
+
+
+
+

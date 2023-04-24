@@ -1,0 +1,49 @@
+@font-face {
+    font-family: la;
+    src: url(../assets/Krungthep.ttf);
+  }
+
+.digitalmapsDropdown{
+    width: 16rem;
+    /* height: 2rem; */
+    top: 115px;
+    position: absolute;
+    list-style: none;
+    text-align: start;
+}
+
+.digitalmapsDropdown li{
+    background: #ffffff;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+
+}
+
+.digitalmapsDropdown li a:hover{
+    background: #fff200;
+}
+
+.digitalmapsDropdown.clicked{
+    display: none;
+}
+
+.submenu-item{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration:none ;
+    /* padding: 15px; */
+    /* padding-right: 3px; */
+    color: black;
+    font-family: la;
+    font-size: 35px;
+    text-align: center;
+    justify-content: center;
+  
+
+}
+
+
+
