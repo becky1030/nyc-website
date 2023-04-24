@@ -5,7 +5,9 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Toilet from "./pages/Toilets/Toilets";
+import Toilet from "./pages/Toilets";
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 
 // import sound from "../public/bump.mp3"
 // import ReactAudioPlayer from "react-audio-player";
