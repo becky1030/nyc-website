@@ -110,15 +110,15 @@ function Toilets() {
           zoom: 13,
           pitch: 60,
         }}
-        style={{ 
-          // width: 600, 
-          // height: 400 
-        width: "90%",
-        height: "60%",
-        borderRadius: "15px",
-        border: "2px solid red",
-        top: "100px",
-        bottom: "0",
+        style={{
+          // width: 600,
+          // height: 400
+          width: "90%",
+          height: "60%",
+          borderRadius: "15px",
+          border: "2px solid red",
+          top: "100px",
+          bottom: "0",
         }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={MAPBOX_TOKEN}
