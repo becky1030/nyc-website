@@ -1,6 +1,7 @@
 {
   "name": "nyc-website",
   "version": "0.1.0",
+  "homepage": "https://becky1030.github.io/nyc-website",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -24,6 +25,8 @@
     "webpack": "^5.10.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +51,7 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^4.1.0"
+    "@iconify/react": "^4.1.0",
+    "gh-pages": "^5.0.0"
   }
 }
