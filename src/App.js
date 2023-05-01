@@ -9,7 +9,7 @@ import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Recommend from "./pages/Recommends";
-// import Discount from "./pages/Discounts";
+import Discount from "./pages/Discounts";
 
 
 // Dropdown Items
@@ -56,7 +56,6 @@ function App() {
           <Route path="/about" exact element={<About />} />
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/recommends" exact element={<Recommend />} />
-          {/* <Route path="/discounts" exact element={<Discount/>} /> */}
 
 
           {/* dropdown items */}
@@ -64,6 +63,7 @@ function App() {
           <Route path="/wifi" exact element={<Wifi />} />
           <Route path="/museum" exact element={<Museum />} />
           <Route path="/park" exact element={<Park />} />
+          <Route path="/discounts" exact element={<Discount/>} />
 
 
         </Routes>

@@ -10,92 +10,92 @@
 
 
   } */
-  
-  .navbar .leftSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 150px;
-  }
-  
-  .navbar .leftSide img {
-    width: 70px;
-  }
-  
-  .navbar .rightSide {
-    flex: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar .rightSide button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .navbar .rightSide svg {
-    font-size: 40px;
-  }
-  
-  .navbar #open {
-    padding-left: 0px;
-  }
-  .navbar #open img {
-    display: none;
-  }
-  
-  .navbar #close img {
-    display: inherit;
-  }
-  
-  .navbar #open .hiddenLinks {
-    display: inherit;
-    margin-left: 30px;
-  }
-  
-  .navbar #close .hiddenLinks {
-    display: none;
-  }
-  
-  .navbar #open a {
-    width: 70px;
-    margin: 5px;
-  }
 
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
 
-    /* media query--> what is this? determine size base on the width of the screen */
+.navbar .leftSide img {
+  width: 70px;
+}
+
+.navbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+
+/* media query--> what is this? determine size base on the width of the screen */
 @font-face {
   font-family: la;
   src: url(../assets/Krungthep.ttf);
 }
 
 .navbar {
+  z-index: 999;
   width: 100%;
-    height: 100px;
+  height: 100px;
   /* height: 5vh; */
   /* background: #fff200; */
   display: flex;
   justify-content: center;
   align-items: center;
 
-
   flex-direction: row;
-    position: fixed;
-    top: 0;
+  position: fixed;
+  /* position: fixed: stick to the top when scrolling down */
+  top: 0;
   font-family: la;
-  margin-top: 40px;
 
   margin-bottom: -50px;
+  background-color: green;
 }
 
 /* how to move apple upward a bit */
@@ -104,7 +104,6 @@
   margin-bottom: 40px;
   margin-right: 180px;
   margin-left: 0px;
-
 }
 
 .nav-items {
@@ -115,14 +114,12 @@
   justify-content: flex-end;
   margin-right: 2rem;
   padding-bottom: -50px;
-
 }
 
 .nav-item {
   display: flex;
   align-items: left;
   /* height: 10vh; */
-
 }
 
 .nav-items a {
@@ -132,11 +129,9 @@
   margin-left: 2rem;
   padding: 4px 6px;
   border-radius: 0px;
-
-
 }
 .nav-item a:hover {
-  background:transparent;
+  background: transparent;
   border-style: solid;
   border-width: 3px;
   border-color: black;

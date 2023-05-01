@@ -1,60 +1,46 @@
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import "../styles/Toilets.css";
 import Map, { Layer, Source } from "react-map-gl";
-import ToiletJson from "../assets/toilet.json";
+import WifiJson from "../assets/wifi.json";
 import PepeIcon from "../assets/pepe.png";
-// import { Icon } from '@iconify/react';
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoiYmVja3l5eXl5IiwiYSI6ImNsZWV2azM0bTBiN2k0NG12cnEybml0am0ifQ.pTk0bhJgKynBeJMf1r8N3A"; // Set your mapbox token here
 
-// const layerStyle = {
-//   id: "point",
-//   type: "circle",
-//   paint: {
-//     "circle-radius": 2,
-//     "circle-color": "#007cbf",
-//   },
-// };
-
 function Toilets() {
-  const mapRef = useRef(null);
+  const mapRef = useRef();
 
-  useEffect(() => {
-    if (!mapRef.current) return;
-
+  // function onMapLoad
+  const onMapLoad = useCallback(() => {
     mapRef.current.loadImage(PepeIcon, (error, image) => {
       if (error) throw error;
 
       // Add the loaded image to the style's sprite with the ID 'kitten'.
       mapRef.current.addImage("pepe-icon", image);
+      // mapRef.current = map
     });
-  }, [mapRef]);
+  }, []);
 
   return (
     <div className="toilet" style={{ backgroundColor: "#fff200" }}>
       <Map
-        ref={mapRef}
+        ref={(e) => {
+          console.log(e);
+          mapRef.current = e;
+          // e = map
+          // .current = mapref default, inside map object there is a current object to save things
+        }}
         initialViewState={{
-          longitude: -73.98451127670837,
-          latitude: 40.7554292155312,
+          longitude: -73.4,
+          latitude: 40.8,
           zoom: 13,
-          pitch: 60,
         }}
-        style={{
-          // width: 600,
-          // height: 400
-          width: "90%",
-          height: "60%",
-          borderRadius: "15px",
-          border: "2px solid red",
-          top: "100px",
-          bottom: "0",
-        }}
+        style={{ width: 600, height: 400 }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={MAPBOX_TOKEN}
+        onLoad={onMapLoad} // <========== HERE, function `onMapLoad`丟進去，告訴map loading完應該要做什麼事情
       >
-        <Source type="geojson" data={ToiletJson}>
+        <Source type="geojson" data={WifiJson}>
           <Layer
             type="symbol"
             layout={{
@@ -64,8 +50,6 @@ function Toilets() {
             }}
           />
         </Source>
-
-       
       </Map>
     </div>
   );

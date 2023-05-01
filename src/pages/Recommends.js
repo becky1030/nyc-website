@@ -1,15 +1,12 @@
 import React from "react";
 import "../styles/Recommends.css";
 
-import SwipeDownIcon from '@mui/icons-material/SwipeDown';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import pepe from '../assets/pepe.png'; 
-
+import SwipeDownIcon from "@mui/icons-material/SwipeDown";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import pepe from "../assets/pepe.png";
 
 // const dino = document.getElementById("dino");
 // const cactus = document.getElementById("cactus");
-
-
 
 // function jump() {
 //   if (dino.classList != "jump") {
@@ -41,35 +38,8 @@ import pepe from '../assets/pepe.png';
 //   jump();
 // });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Recommends = () => {
-
   return (
-
     <div className="container">
       <div>
         <h2>free</h2>
@@ -79,10 +49,8 @@ const Recommends = () => {
         </p>
       </div>
 
-
-<div className="icon">
-      <SwipeDownIcon variant="contained">
-      </SwipeDownIcon>
+      <div className="icon">
+        <SwipeDownIcon variant="contained"></SwipeDownIcon>
       </div>
 
       <div className="border1"></div>
@@ -95,7 +63,6 @@ const Recommends = () => {
           gridGap: 20,
         }}
       >
-        
         <div>
           Food
           <div className="row3-1">
@@ -195,8 +162,7 @@ const Recommends = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>9/11 Ground Zero Tours
-</span>
+                  <span>9/11 Ground Zero Tours</span>
                 </a>
               </li>
               <li>
@@ -211,9 +177,6 @@ const Recommends = () => {
             </ul>
           </div>
         </div>
-
-
-
 
         <div>
           {" "}
@@ -426,31 +389,19 @@ const Recommends = () => {
                   <span>PUBLIC Hotel</span>
                 </a>
               </li>
-              
             </ul>
-
-            
-
-
           </div>
-
         </div>
-
       </div>
 
-
-<div className="bottomtext"><p>To be continued...<img src={pepe} />
-
-</p></div>
-
-
+      <div className="bottomtext">
+        <p>
+          To be continued...
+          <img src={pepe} />
+        </p>
+      </div>
     </div>
-
   );
 };
-
-
-
-
 
 export default Recommends;
