@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "homepage": " https://becky1030.github.io/nyc-website/toilets/",
     "@ant-design/react-slick": "^1.0.0",
     "@ap.cx/react-fullpage": "^0.3.0",
     "@emotion/react": "^11.10.8",
@@ -63,6 +64,5 @@
   "devDependencies": {
     "@iconify/react": "^4.1.0",
     "gh-pages": "^5.0.0",
-    "homepage": " https://becky1030.github.io/nyc-website/"
   }
 }
