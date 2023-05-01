@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     width: 100%;
     height: 100px;
     background-color: #121619;
@@ -6,7 +6,10 @@
     flex-direction: row;
     position: fixed;
     top: 0;
-  }
+    margin-top: 30px;
+
+
+  } */
   
   .navbar .leftSide {
     flex: 50%;
@@ -31,7 +34,6 @@
   .navbar a {
     color: white;
     text-decoration: none;
-    margin: 20px;
   }
   
   .navbar .rightSide button {
@@ -78,20 +80,31 @@
 }
 
 .navbar {
-  height: 15vh;
-  background: #fff200;
+  width: 100%;
+    height: 100px;
+  /* height: 5vh; */
+  /* background: #fff200; */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: la;
 
+
+  flex-direction: row;
+    position: fixed;
+    top: 0;
+  font-family: la;
+  margin-top: 40px;
+
+  margin-bottom: -50px;
 }
 
 /* how to move apple upward a bit */
 .navbar-logo {
-  align-items: right;
-  width: 8rem;
-  margin-right: 10px;
+  align-items: left;
+  margin-bottom: 40px;
+  margin-right: 180px;
+  margin-left: 0px;
+
 }
 
 .nav-items {
@@ -101,12 +114,15 @@
   width: 70vw;
   justify-content: flex-end;
   margin-right: 2rem;
+  padding-bottom: -50px;
+
 }
 
 .nav-item {
   display: flex;
   align-items: left;
   /* height: 10vh; */
+
 }
 
 .nav-items a {
@@ -116,6 +132,8 @@
   margin-left: 2rem;
   padding: 4px 6px;
   border-radius: 0px;
+
+
 }
 .nav-item a:hover {
   background:transparent;

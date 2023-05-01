@@ -1,9 +1,443 @@
-.h1{
-    font-family: la;
-    font-size: 30px;
+/* 
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+} */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
-.h2{
-    font-family: la;
-    font-size: 60px;
+.container div {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  font-size: 5em;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .container div:nth-of-type(even) {
+  background-color: rgba(75, 214, 253, 0.84);
+  color: white;
+  height: 60vh;
+} */
+
+.container h1 {
+  display: grid;
+  font-family: la;
+  font-size: 200px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+  margin-top: 300px;
+}
+
+.container h2 {
+  display: grid;
+  font-family: la;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+  margin-left: 300px;
+}
+
+.container p {
+  display: grid;
+  font-family: la;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 350px;
+
+  
+}
+
+
+.border1 {
+    display:block;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-top: 0px;
+      border-bottom: 7px solid black;
+      width: 100%;
+    }
+
+.border2 {
+display: block;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 0px;
+  border-bottom: 7px solid black;
+  width: 100%;
+}
+
+
+
+.container .col1row1 div{
+    display: block;
+    font-family: la;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 160px;
+}
+
+.container .col1row1 div .row3-1{
+    display: block;
+    font-family: la;
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+}
+
+/* .container .col1row2 div{
+    display: block;
+    font-family: la;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+} */
+
+.row3-1 ul {
+    list-style: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 0;
+
+  }
+
+.row3-1 ul li:before {
+    content: "";
+    /* background-size: 80px; */
+    background-image: url("../assets/apple-10.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    display: inline-block;
+    width: 2.1em;
+    height: 2.1em;
+    position: re;
+    top: 1rem;
+    /* margin-right: 0.2rem; */
+}
+
+
+
+
+
+.container .col1row1 div .row3-2{
+    display: block;
+    font-family: la;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 60px;
+
+    /* margin-right: 100px; */
+
+    /* display: block;
+    font-family: la;
+    font-size: 40px;
+    text-align: left;
+    margin: 0; */
+}
+
+.row3-2 ul {
+    /* display: grid; */
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    /* text-align: center;
+    justify-content: center; */
+
+    /* list-style: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 0; */
+
+  }
+
+.row3-2 ul li:before {
+    content: "";
+    /* background-size: 80px; */
+    background-image: url("../assets/apple-10.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    display: inline-block;
+    width: 2.1em;
+    height: 2.1em;
+    position: re;
+    top: 1rem;
+    /* margin-right: 0.2rem; */
+}
+
+
+.container .col1row1 div .row3-3{
+    display: block;
+    font-family: la;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.row3-3 ul {
+    /* display: grid; */
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    /* text-align: center;
+    justify-content: center; */
+
+    /* list-style: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 0; */
+
+  }
+
+.row3-3 ul li:before {
+    content: "";
+    /* background-size: 80px; */
+    background-image: url("../assets/apple-10.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    display: inline-block;
+    width: 2.1em;
+    height: 2.1em;
+    position: re;
+    top: 1rem;
+    /* margin-right: 0.2rem; */
+}
+
+
+
+
+
+
+
+
+
+
+/* dino */
+.container .col2row2 div{
+    display: block;
+    font-family: la;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 0;
+}
+
+
+.container .col2row2 div .row3-4{
+    display: block;
+    font-family: la;
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+
+    /* margin-right: 100px; */
+}
+
+.row3-4 ul {
+    /* display: grid; */
+    list-style: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 0;
+    /* text-align: center;
+    justify-content: center; */
+
+    /* list-style: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 0; */
+
+  }
+
+.row3-4 ul li:before {
+    content: "";
+    /* background-size: 80px; */
+    background-image: url("../assets/apple-10.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    display: inline-block;
+    width: 2.1em;
+    height: 2.1em;
+    position: re;
+    top: 1rem;
+    /* margin-right: 0.2rem; */
+}
+
+
+
+
+.container .col2row2 div .row3-5{
+    display: block;
+    font-family: la;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 60px;
+    /* margin-right: 100px; */
+}
+
+.row3-5 ul {
+    /* display: grid; */
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    /* text-align: center;
+    justify-content: center; */
+
+    /* list-style: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 0; */
+
+  }
+
+.row3-5 ul li:before {
+    content: "";
+    /* background-size: 80px; */
+    background-image: url("../assets/apple-10.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    display: inline-block;
+    width: 2.1em;
+    height: 2.1em;
+    position: re;
+    top: 1rem;
+    /* margin-right: 0.2rem; */
+}
+
+
+
+
+.container .col2row2 div .row3-6{
+    display: block;
+    font-family: la;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 100px;
+    /* margin-right: 100px; */
+}
+
+.row3-6 ul {
+    /* display: grid; */
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    /* text-align: center;
+    justify-content: center; */
+
+    /* list-style: none;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 0; */
+
+  }
+
+.row3-6 ul li:before {
+    content: "";
+    /* background-size: 80px; */
+    background-image: url("../assets/apple-10.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    display: inline-block;
+    width: 2.1em;
+    height: 2.1em;
+    position: re;
+    top: 1rem;
+    /* margin-right: 0.2rem; */
+}
+
+.icon{
+  text-align: center;
+  justify-content: center;
+  /* margin: 0; */
+  /* margin-bottom: 5000px; */
+  transform: scale(3.8);
+
+}
+
+.bottomtext p{
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+
+/* Dino game sources from dawidadach*/
+/* .game {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url("../assets/worm-11.png");
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+.jump {
+  animation: jump 0.2s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  30% {
+    top: 130px;
+  }
+
+  50% {
+    top: 80px;
+  }
+
+  80% {
+    top: 130px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+
+  background-image: url("../assets/apple-10.png");
+  background-size: 20px 40px;
+
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+
+  100% {
+    left: -20px;
+  }
+} */

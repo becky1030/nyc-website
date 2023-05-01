@@ -1,6 +1,13 @@
 .toilet {
-    width: 100%;
+    width: 90%;
     height: 100%;
+
+
+    margin-left: 180px;
+    margin-bottom: 80px;
+    margin-top: 5px;
+
+
     display: flex;
     justify-content: center;
     align-items: left;

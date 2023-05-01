@@ -8,6 +8,8 @@
     display: flex;
   }
   
+  
+  
   .contact .leftSide {
     height: 100%;
     flex: 50%;
@@ -25,15 +27,16 @@
     justify-content: center;
   }
   
-  .contact .rightSide h1 {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  .contact .rightSide h1 img{
+    /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     font-weight: 10;
-    font-size: 50px;
-    margin-left: 30px;
+    font-size: 50px; */
+    margin-top: 100px;
   }
   
   form {
+    margin-top: -80px;
     display: flex;
     flex-direction: column;
     width: auto;
@@ -73,17 +76,39 @@
     color: grey;
   }
   
-  form button {
+  /* form button {
     margin-top: 40px;
     width: 140px;
-    height: 40px;
+    height: 40px; */
     /* border: none; */
     /* background-color: #121619; */
     /* color: whitesmoke; */
     /* font-size: 15px; */
-    cursor: pointer;
-  }
+    /* cursor: pointer;
+  } */
   .leftSide {
     margin-top: 70px;
   }
  
+  form .btn{
+    border: black;
+    border-style: solid;
+    border-width: 3px;
+    background: white;
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    padding: 6px 16px;
+    font-size: 1.1rem;
+    color: black;
+    background: rgb(255, 0, 0);
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+    font-family: la;
+
+}
+
+form .btn:hover{
+    color: black;
+    background: green;
+}

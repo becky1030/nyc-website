@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "coun_dist": "39",
+        "ntaname": "Prospect Park",
+        "femafldz": "X",
+        "assem_dist": "44",
+        "site_name": "Grand Army Plaza",
+        "boro_name": "Brooklyn",
+        "femafld_t": "AREA OF MINIMAL FLOOD HAZARD",
+        "st_sen_dist": "20",
+        "street": "FLATBUSH AVENUE",
+        "boro_code": "3",
+        "boro_cd": "355",
+        "hrc_evac": null,
+        "cong_dist": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96907239517027,
+          40.672228846277484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coun_dist": "21",
+        "ntaname": "Corona",
+        "femafldz": "X",
+        "assem_dist": "34",
+        "site_name": "Corona Plaza",
+        "boro_name": "Queens",
+        "femafld_t": "AREA OF MINIMAL FLOOD HAZARD",
+        "st_sen_dist": "13",
+        "street": "ROOSEVELT AVENUE",
+        "boro_code": "4",
+        "boro_cd": "404",
+        "hrc_evac": null,
+        "cong_dist": "14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86263617948991,
+          40.74964121058453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coun_dist": "2",
+        "ntaname": "Midtown South-Flatiron-Union Square",
+        "femafldz": "X",
+        "assem_dist": "74",
+        "site_name": "Madison Square Park",
+        "boro_name": "Manhattan",
+        "femafld_t": "AREA OF MINIMAL FLOOD HAZARD",
+        "st_sen_dist": "28",
+        "street": "MADISON AVENUE",
+        "boro_code": "1",
+        "boro_cd": "105",
+        "hrc_evac": null,
+        "cong_dist": "12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98784339765545,
+          40.74130070685076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coun_dist": "10",
+        "ntaname": "Washington Heights (South)",
+        "femafldz": "X",
+        "assem_dist": "72",
+        "site_name": "Plaza de Las Americas",
+        "boro_name": "Manhattan",
+        "femafld_t": "AREA OF MINIMAL FLOOD HAZARD",
+        "st_sen_dist": "31",
+        "street": "WEST 175 STREET",
+        "boro_code": "1",
+        "boro_cd": "112",
+        "hrc_evac": null,
+        "cong_dist": "13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93799584577202,
+          40.84592127411525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coun_dist": "15",
+        "ntaname": "Belmont",
+        "femafldz": "X",
+        "assem_dist": "78",
+        "site_name": "Fordham Plaza",
+        "boro_name": "Bronx",
+        "femafld_t": "AREA OF MINIMAL FLOOD HAZARD",
+        "st_sen_dist": "33",
+        "street": "PARK AVENUE",
+        "boro_code": "2",
+        "boro_cd": "206",
+        "hrc_evac": null,
+        "cong_dist": "15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89115785635144,
+          40.860825986041235
+        ]
+      }
+    }
+  ]
+}

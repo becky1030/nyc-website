@@ -1,5 +1,22 @@
 /* Put css that affects every single page */
 
+@font-face {
+  font-family: krungthep;
+  src: url(./assets/Krungthep.ttf);
+}
+.krungthep{
+  font-family: krungthep;
+}
+@font-face {
+  font-family: la;
+  src: url(./assets/Lalezar-Regular.ttf);
+}
+.la{
+  font-family: la;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
 .App {
   width: 100%;
   height: auto;

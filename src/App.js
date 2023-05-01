@@ -1,3 +1,6 @@
+// scrollable
+// import FullPageScroll from "./pages/Recommends";
+
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -5,9 +8,19 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Toilet from "./pages/Toilets";
-import 'mapbox-gl/dist/mapbox-gl.css';
+import Recommend from "./pages/Recommends";
+// import Discount from "./pages/Discounts";
 
+
+// Dropdown Items
+import Wifi from "./pages/Wifi";
+import Toilet from "./pages/Toilets";
+import Museum from "./pages/Museum";
+import Park from "./pages/Park";
+
+
+
+import "mapbox-gl/dist/mapbox-gl.css";
 
 // import sound from "../public/bump.mp3"
 // import ReactAudioPlayer from "react-audio-player";
@@ -16,9 +29,19 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // Switch is being replaced by Routes in the latest React version
 
+// import Dino from "./pages/Recommends";
+
+
+
+
+
+
+
+
+
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: "#fff200" }}>
       {/* <audio id="audio" loop autoplay> 
   <source src="../public/bump.mp3" type="audio/mp3">
 </audio> */}
@@ -32,9 +55,20 @@ function App() {
           {/* <Route path="/home" exact element={<Maps />} /> */}
           <Route path="/about" exact element={<About />} />
           <Route path="/contact" exact element={<Contact />} />
+          <Route path="/recommends" exact element={<Recommend />} />
+          {/* <Route path="/discounts" exact element={<Discount/>} /> */}
+
+
+          {/* dropdown items */}
           <Route path="/toilets" exact element={<Toilet />} />
+          <Route path="/wifi" exact element={<Wifi />} />
+          <Route path="/museum" exact element={<Museum />} />
+          <Route path="/park" exact element={<Park />} />
+
 
         </Routes>
+
+
         <Footer />
       </Router>
     </div>

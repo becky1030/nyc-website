@@ -1,10 +1,11 @@
-// can not change button to image
-
 import React from "react";
 import String from "../assets/string.png";
 import SubmitButton from "../assets/submit.png";
 import Scream from "../assets/scream.png";
 import "../styles/Contact.css";
+import { Link } from "react-router-dom";
+import string from "../assets/string.png";
+
 
 function Contact() {
   return (
@@ -18,7 +19,7 @@ function Contact() {
       ></div>
       <div className="rightSide">
 
-        <h1> Want to put a picture here!!!</h1>
+        <h1><img src={string} style={{width:500, height:280}}/></h1>
 
         <form id="contact-form" method="POST">
           <label htmlFor="name">Full Name</label>
@@ -33,11 +34,16 @@ function Contact() {
             required
           ></textarea>
           {/* <button><img src="submit" alt="my image"/></button> */}
-          <button
+          {/* <button
             type="submit"
             style={{ backgroundImage: `url(${SubmitButton})`,
            }}
-          ></button>
+
+           
+          ></button> */}
+           <Link to="https://www.link.nyc/how-to-connect.html">
+      <button className="btn">SUBMIT</button>
+    </Link>
         </form>
       </div>
     </div>

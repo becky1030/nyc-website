@@ -1,0 +1,29 @@
+.museum {
+    width: 90%;
+    height: 100%;
+
+
+    margin-left: 180px;
+    margin-bottom: 80px;
+    margin-top: 5px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    height: 60%;
+    margin-left: 80px;
+    margin-top: 200px;
+}

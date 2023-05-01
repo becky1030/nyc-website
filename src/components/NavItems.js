@@ -29,7 +29,12 @@ export const navItems = [
       id: 5,
       title: "Recommends",
       path: "./recommends",
-      // not file name
+      cName: "nav-item",
+    },
+    {
+      id: 6,
+      title: "Discounts",
+      path: "./discounts",
       cName: "nav-item",
     },
   ];
@@ -55,8 +60,9 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Food",
-      path: "./food",
+      title: "Park",
+      path: "./park",
       cName: "submenu-item",
     },
   ];
+
