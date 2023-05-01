@@ -1,7 +1,7 @@
 {
   "name": "nyc-website",
   "version": "0.1.0",
-  "homepage": "https://becky1030.github.io/nyc-website",
+  "homepage": "http://becky1030.github.io/",
   "private": true,
   "dependencies": {
     "@ant-design/react-slick": "^1.0.0",
@@ -63,7 +63,6 @@
   },
   "devDependencies": {
     "@iconify/react": "^4.1.0",
-    "gh-pages": "^5.0.0",
-    "homepage": "http://becky1030.github.io/"
+    "gh-pages": "^5.0.0"
   }
 }
